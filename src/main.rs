@@ -1,6 +1,7 @@
 use std::io;
 extern crate rand;
 use rand::seq::SliceRandom;
+extern crate cap_std;
 
 //Card Object
 struct Card {
@@ -160,21 +161,6 @@ fn main() {
     for card in &player_hand {
         println!("{} of {}", card.rank, card.suit);
     }
-
-    // let player_hand_value = calculate_hand_value(&player_hand);
-    // println!("Player's hand value: {}", player_hand_value);
-
-    // let dealer_hand_value = calculate_hand_value(&dealer_hand);
-    // println!("Dealer's hand value: {}", dealer_hand_value);
-
-
-    // vertified hand
-    //show_hands(&player_hand, &dealer_hand);
-
-
-    // Show the remaining cards
-    //deck.show_remaining_cards();
-
 
     loop {
         println!();
